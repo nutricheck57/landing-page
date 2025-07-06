@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Paciente - NutriCheck</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar fade-in">
+      <div class="logo">nutri<span>check</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about-us.html">Nosotros</a></li>
+        <li><a href="services.html">Servicio</a></li>
+        <li><a href="testimonies.html">Testimonios</a></li>
+        <li><a href="contact.html">Contáctanos</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="registro fade-in">
+    <div class="registro-form slide-up">
+      <h1 class="logo">nutri<span>check</span></h1>
+      <h2>Regístrate como paciente</h2>
+      <form id="registroForm">
+        <label for="nombre">Nombre completo:</label>
+        <input id="nombre" type="text" required>
+
+        <label for="edad">Edad:</label>
+        <input id="edad" type="number" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input id="correo" type="email" required>
+
+        <label for="password">Contraseña:</label>
+        <input id="password" type="password" required>
+        <p class="terminos">Al registrarte, aceptas nuestras <a href="#">Condiciones del servicio</a> y <a href="#">Política de Privacidad</a>.</p>
+        <div class="botones">
+          <button id="btnCrear" class="btn hover-grow" type="submit">Crear cuenta</button>
+          <button class="btn secondary hover-grow" type="button">Tengo una cuenta</button>
+        </div>
+      </form>
+    </div>
+    <div class="registro-img slide-up">
+      <img src="img/registro.png" alt="Registro">
+    </div>
+  </main>
+
+  <footer class="footer fade-in">
+    <div class="footer-content">
+      <p class="logo">nutri<span>check</span></p>
+      <p class="correo"><i class="fas fa-envelope"></i> nutricheck@soporte.com</p>
+      <a href="#" class="terminos">Términos y condiciones</a>
+      <p class="copyright">© 2025 NutriCheck. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

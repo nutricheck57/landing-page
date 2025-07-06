@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NutriCheck - Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header>
+  <i class="fas fa-heartbeat"></i>
+  NutriCheck - Asistente virtual sobre TCA
+  <a href="index.html" class="back-button">
+    <i class="fas fa-arrow-left"></i> Volver
+  </a>
+</header>
+
+  <section class="chat-container">
+    <div class="chatbox">
+      <div id="chatboxBody" class="chatbox-body">
+        <div class="message bot-message">
+          <img src="img/bot-avatar.png" alt="bot" class="avatar">
+          <p>🤖 ¡Hola! Soy tu asistente de NutriCheck. Pregúntame sobre anorexia, bulimia, prevención, apoyo emocional o cualquier tema relacionado con los TCA.</p>
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Escribe tu pregunta aquí...">
+        <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
